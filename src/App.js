@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import Form from "./Components/Form"
+import Display from "./Components/Display"
+import './App.css'
 
-function App() {
+const App = () => {
+  const [entries, setEntries] = useState([])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='page'>
+      <h1>React Form</h1>
+      <div>
+        <Form entries={entries} setEntries={setEntries} />
+      </div>
+      <div id='displayArea'>
+        {/* map entries */}
+        {entries.length == 0 ? <h3>entries will be displayed here</h3>
+          :
+          <div id="displayEntries">
+            {entries.map((entry, index) => {
+              return <Display entry={entry} />
+            })
+            }
+          </div>
+        }
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

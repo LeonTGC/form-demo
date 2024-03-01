@@ -1,0 +1,22 @@
+#displayWrapper {
+    margin: 10px;
+    border: solid #fb8500 3px;
+    background-color: #ffb703;
+    border-radius: 25px;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.info {
+    margin: 5px;
+}
+.activity {
+    height: 150px;
+    overflow: auto;
+}
+.activity > p > span {
+    font-size: 0.8em;
+    font-style: italic;
+}

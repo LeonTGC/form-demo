@@ -1,0 +1,55 @@
+form {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 25px;
+    padding: 30px;
+    border:solid 2px #023047;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.formLabelText {
+    color: #023047;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+form > label {
+    /* background-color: rebeccapurple; */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form > label > input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: #fb8500;
+    background-color: whitesmoke;
+    height: 30px;
+}
+.userInputs {
+    margin: 10px;
+}
+
+form > label > select {
+    width: 80px;
+}
+
+form > label > textarea {
+    height: 150px;
+    overflow-y: scroll;
+    border: #023047 solid 2px;
+}
+
+#submitButton{
+    width: 120px;
+    height: 30px;
+    font-weight: 700;
+    color: #023047;
+    align-self: center;
+    background-color: #ffb703;
+    border: solid 3px #023047;
+    border-radius: 8px;
+
+}
